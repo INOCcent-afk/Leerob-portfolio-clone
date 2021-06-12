@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.blue-links {
+  @apply text-blue-500 mx-2 underline;
+}
+
+.normal-links {
+  @apply mx-2 dark:text-gray-400 md:text-base font-medium;
 }

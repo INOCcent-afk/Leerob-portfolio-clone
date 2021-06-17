@@ -4,11 +4,10 @@ import PageHeading from "../components/PageHeading";
 import DataContainer from "../containers/DataContainer";
 import Track from "../components/Track";
 
-import { getCurrentPlaylist } from "../utils/api/getCurrentPlaylist";
 import { motion } from "framer-motion";
 import { PageAnimate } from "../animations/PageTransition";
 
-const dashboard: FC = ({ playlist }: any) => {
+const dashboard: FC = () => {
   return (
     <>
       <motion.div
@@ -95,8 +94,8 @@ const dashboard: FC = ({ playlist }: any) => {
 
 export default dashboard;
 
-export const getStaticProps = async () => {
-  const playlist = await getCurrentPlaylist();
+// export const getStaticProps = async () => {
+//   const playlist = await getCurrentPlaylist();
 
-  return { props: { playlist } };
-};
+//   return { props: { playlist } };
+// };

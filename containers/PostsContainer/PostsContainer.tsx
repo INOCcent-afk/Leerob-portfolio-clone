@@ -9,13 +9,17 @@ import { getPosts } from "../../utils/api/getPosts";
 const PostsContainer: FC<PostsType> = ({ posts }: PostsType) => {
   const [blogs, setBlogs] = React.useState([]);
 
-  const { data } = useQuery("tracks", getPosts, {
+  const { data, isLoading } = useQuery("tracks", getPosts, {
     initialData: posts,
   });
 
   React.useEffect(() => {
     setBlogs(data);
   }, []);
+
+  if (isLoading) {
+    return <div className="h-screen">...</div>;
+  }
 
   return (
     <div className="py-5">

@@ -26,3 +26,7 @@ a {
 .normal-links {
   @apply mx-2 dark:text-gray-400 md:text-base font-medium;
 }
+
+.sticky-nav {
+  backdrop-filter: saturate(180%) blur(20px);
+}

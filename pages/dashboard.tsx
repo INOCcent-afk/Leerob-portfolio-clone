@@ -1,6 +1,7 @@
 import React from "react";
 
 import PageHeading from "../components/PageHeading";
+import DataContainer from "../containers/DataContainer";
 
 const dashboard = () => {
   return (
@@ -13,6 +14,7 @@ const dashboard = () => {
           build your own? Check out my
         </p>
       </PageHeading>
+      <DataContainer />
     </>
   );
 };

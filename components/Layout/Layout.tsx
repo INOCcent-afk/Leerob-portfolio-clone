@@ -12,7 +12,7 @@ const Layout: FC<Props> = ({ children }: Props) => {
     <>
       <div className="dark:bg-black">
         <Header />
-        <div className="max-w-screen-sm flex flex-col mx-2 md:mx-auto py-10">
+        <div className="max-w-screen-sm flex flex-col mx-2 sm:mx-auto py-10">
           {children}
           <Footer />
         </div>

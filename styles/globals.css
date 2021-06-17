@@ -39,3 +39,10 @@ a {
 body::-webkit-scrollbar {
   width: 0;
 }
+
+.light {
+  background: #fff;
+}
+.dark {
+  background: #000;
+}

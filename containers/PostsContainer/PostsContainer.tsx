@@ -18,7 +18,11 @@ const PostsContainer: FC<PostsType> = ({ posts }: PostsType) => {
   }, []);
 
   if (isLoading) {
-    return <div className="h-screen">...</div>;
+    return (
+      <>
+        <div className="decoy">...</div>
+      </>
+    );
   }
 
   return (

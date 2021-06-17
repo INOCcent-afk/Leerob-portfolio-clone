@@ -30,3 +30,12 @@ a {
 .sticky-nav {
   backdrop-filter: saturate(180%) blur(20px);
 }
+
+.decoy {
+  height: 2000px;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
